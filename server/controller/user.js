@@ -5,6 +5,10 @@ const Register = (req, res) => {
 	
 	if (req.body.email === 'test@test.de'){
 		res.json({success: false, reason: 'user already exist'});
+	}
+	// this password check could have been easly implimented on frontend but just for demo purpose moved it to backed.
+	else if (req.body.password !== req.body.checkPass){
+		res.json({success: false, reason: 'password does not match'});
 	} else {
 		res.json({success: true});
 	}
