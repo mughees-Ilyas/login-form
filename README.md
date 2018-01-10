@@ -1,6 +1,6 @@
 # login-form
 
-Project created using Vue and node(express).
+Project created using Vue and node(express) with vue-router for navigation and guarding routes.
 A simple login/registration form for demo purpose. no database is present but mongoDB can be easily incorporated in the project to extend it.
 
 other libraries: axios for promises and ui meterials to create form.
