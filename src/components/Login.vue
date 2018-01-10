@@ -110,37 +110,5 @@ export default {
 </script>
 
 <style lang="scss">
-.el-col {
-    // margin-bottom:
-}
-.regTable {
-    background-color: white;
-    border-radius: 4px;
-    height: 100%;
-    padding-bottom:15px;
-    position: relative;
-    width: 420px;
-}
-
-.el-tabs__item {
-    border-bottom-right-radius: 4px;
-    border-top-left-radius: 4px;
-    width: 200px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(65, 65, 65);
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px 0px inset;
-}
-
-.is-active {
-    color: rgb(61, 70, 77)!important;
-    background-color: rgb(255, 255, 255);
-    box-shadow: none;
-}
-
-.el-form {
-    padding-right: 20px
-}
-.el-tabs__active-bar {
-    background-color:transparent!important;
-}
+    @import '../assets/styles/login.scss'
 </style>

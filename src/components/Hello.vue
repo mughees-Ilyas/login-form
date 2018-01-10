@@ -1,8 +1,10 @@
 <template scope='scope'>
-<div class="hello">
-    <h1>{{ msg }}: Mughees</h1>
+<div class="main-display">
+    <div class="banner">
+        <h1>{{ msg }}: Mughees</h1>
 
-    <el-button type="primary" @click="logout()">logout</el-button>
+        <el-button type="primary" @click="logout()">logout</el-button>
+    </div>
 </div>
 </template>
 
@@ -16,7 +18,7 @@ export default {
     name: 'hello',
     data() {
         return {
-            msg: 'Welcome to Vue-login',
+            msg: 'Welcome to homepage',
         }
     },
     methods: {
@@ -40,39 +42,6 @@ export default {
 }
 </script>
 
-<style scoped>
-h1,
-h2 {
-    font-weight: normal;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    /*display: inline-block;*/
-    margin: 10px 0;
-}
-
-a {
-    color: #42b983;
-}
-
-.list-complete-item {
-    transition: all 1s;
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.list-complete-enter,
-.list-complete-leave-to {
-    opacity: 0;
-    transform: translateY(30px);
-}
-
-.list-complete-leave-active {
-    position: absolute;
-}
+<style lang="scss" scoped>
+    @import '../assets/styles/hello.scss'
 </style>

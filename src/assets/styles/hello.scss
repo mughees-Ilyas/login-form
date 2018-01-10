@@ -1,0 +1,45 @@
+h1,
+h2 {
+    font-weight: normal;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    /*display: inline-block;*/
+    margin: 10px 0;
+}
+
+a {
+    color: #42b983;
+}
+
+.list-complete-item {
+    transition: all 1s;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.list-complete-enter,
+.list-complete-leave-to {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.list-complete-leave-active {
+    position: absolute;
+}
+
+.main-display {
+    display:flex;
+    justify-content: center;
+}
+.banner {
+    background-color: white;
+    width: 25%;
+    padding: 10px;
+    border-radius: 5px;
+}
