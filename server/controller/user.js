@@ -12,7 +12,7 @@ const Register = (req, res) => {
 }
 
 const Login = (req, res) => {
-	if (req.body.email === 'test@test.de' && req.body.password ==='123456' ){
+	if (req.body.email === 'test@test.de' && req.body.password ==='Password123' ){
 		res.json({success: true, token:"randomtokenhere"});
 	} else {
 		res.json({success: false});
